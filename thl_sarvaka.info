@@ -1,5 +1,27 @@
 name = THL Sarvaka 
 description = A responsive Drupal 7 theme for THL based on the Shanti Sarvaka Theme.
 core = 7.x
-base = shanti_sarvaka
+base theme = shanti_sarvaka
 
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]         = Top Bar Header
+regions[banner]         = Color Strip Banner
+regions[content]        = Content
+regions[search_flyout]  = Search Fly Out
+regions[sidebar_first]  = Primary Sidebar
+regions[sidebar_second] = Secondary Sidebar
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+regions[footer]         = Footer
+regions[admin_footer]   = Admin Footer
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = css/thl-main.css
+stylesheets[all][] = fonts/thlicon/thlicon-style.css

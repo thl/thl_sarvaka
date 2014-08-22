@@ -1,0 +1,46 @@
+
+/* Hide space below topbar banner */
+.header-banner {
+	z-index: 300;
+}
+
+/* Set banner background to thl mountains */
+header.header-banner div.navbar.navbar-default{
+	background: url('../images/thl-masthead-mountains.jpg') no-repeat 0 0 #FFF;
+	border-radius: 0px;
+}
+
+/* Align thl logo and banner/slogan text*/
+.navbar-default h1 {
+	padding-bottom: 0px;
+}
+
+.navbar-default h1 a.navbar-brand {
+	color: white;
+	padding-top: 4px;
+}
+
+.navbar-default h1 a.navbar-brand span {
+	display:inline-block;
+	top: 0px;
+}
+
+.navbar-default h1 a.navbar-brand span.site-title {
+	font-size:120%;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.navbar-default h1 a.navbar-brand span.site-slogan {
+	font-size:90%;
+}
+
+.navbar-default h1 a.navbar-brand:hover {
+	color: #FFF;
+}
+
+/* Explore Collections Style Updates */
+
+section.collections {
+	padding-bottom: 16px;
+}
