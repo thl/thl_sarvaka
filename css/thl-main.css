@@ -83,3 +83,11 @@ section.collections {
 	padding: 12px;
 }
 */
+
+/* Pager Styles */
+.pager input.form-text {
+ max-width: 50px;
+}
+.pager * {
+ display: inline;
+}
