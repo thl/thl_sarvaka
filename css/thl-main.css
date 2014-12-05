@@ -34,11 +34,11 @@ header.header-banner div.navbar.navbar-default{
 }
 
 .main-content header ul.tabs.primary {
-	bottom: .45rem;
+	bottom: 0;
 }
 
 .main-content header ul.tabs.secondary {
-	bottom: .8rem;
+	bottom: .3rem;
 }
 
 /* Align thl logo and banner/slogan text*/
@@ -76,9 +76,10 @@ section.collections {
 }
 
 /* Content Area */
-.page-places .main-content > .row > .content-section, .page-subjects .main-content > .row > .content-section {
+/*.page-places .main-content > .row > .content-section, .page-subjects .main-content > .row > .content-section {
 	padding: 0px;
 }
 .page-places .main-content .content .content-section {
 	padding: 12px;
 }
+*/
