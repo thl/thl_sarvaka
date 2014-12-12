@@ -24,7 +24,7 @@ header.header-banner * {
 
 /* Set banner background to thl mountains */
 header.header-banner div.navbar.navbar-default{
-	background: url('../images/thl-masthead-mountains-1400.jpg') no-repeat 0 0 #FFF;
+	/*background: url('../images/thl-masthead-mountains-1400.jpg') no-repeat 0 0 #FFF;*/
 	border-radius: 0px;
 }
 
@@ -38,12 +38,17 @@ header.header-banner div.navbar.navbar-default{
 }
 
 .main-content header ul.tabs.secondary {
-	bottom: .3rem;
+	bottom: .8rem;
+}
+
+.navbar.navbar-default {
+	background-color: #eee;
 }
 
 /* Align thl logo and banner/slogan text*/
 .navbar-default h1 {
-	padding-bottom: 0px;
+	padding-top: 3px;
+	margin-bottom: -3px;
 }
 
 .navbar-default h1 a.navbar-brand {
@@ -57,12 +62,18 @@ header.header-banner div.navbar.navbar-default{
 }
 
 .navbar-default h1 a.navbar-brand span.site-title {
-	font-size:120%;
+	color: #444;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 120%;
+	font-weight: normal;
 	font-style: normal;
 }
 
 .navbar-default h1 a.navbar-brand span.site-slogan {
-	font-size:90%;
+	color: #555;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 90%;
+	font-style: italic;
 }
 
 .navbar-default h1 a.navbar-brand:hover {
@@ -90,4 +101,7 @@ section.collections {
 }
 .pager * {
  display: inline;
+}
+.related-photos {
+max-width: 80px;
 }

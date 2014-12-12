@@ -17,3 +17,9 @@ function thl_sarvaka_preprocess(&$variables) {
   $variables['breadcrumb'][] = ($variables['is_front'])? 'Home' : drupal_get_title();
   $variables['theme_path'] = $base; 
 }
+
+function thl_sarvaka_preprocess_html(&$vars) {
+	//<link href='http://fonts.googleapis.com/css?family=PT+Sans:700,400italic' rel='stylesheet' type='text/css'>
+	//<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	drupal_add_css('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic', array('type' => 'external'));
+}
