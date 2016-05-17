@@ -11,15 +11,9 @@
 	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore </span>Collections<i class="icon shanticon-directions"></i></a></span><!-- mobile < 768 : collections -->
 	      </nav>
 
-	      <h1 class="navbar-header<?php if(!$variables['shanti_site']) { print " default"; } ?>">
+	      <h1 class="navbar-header">
 	        <a href="<?php print $variables['home_url']; ?>" class="navbar-brand" title="<?php print $site_name; ?> Homepage">
-	          <?php if($variables['shanti_site']): ?>
-	            <i class="icon shanticon-logo"></i><em>SHANTI</em><?php if($variables['use_admin_site_title']) {
-		            	print "<span class=\"site-title\">{$site_name}</span>";
-		            } ?>
-	          <?php else: ?>
 	            <img src="<?php print $logo; ?>" class="site-logo" /> <span class="site-title"><?php print $site_name; ?></span>
-	          <?php endif; ?>
 	          <?php if($site_slogan) { print '<span class="site-slogan">' . $site_slogan . '</span>' ;} ?>
 	        </a>
 	      </h1>
@@ -48,7 +42,7 @@
         <div class="row">
 
           <!-- Banner Region -->
-          <header class="col-xs-12 titlearea banner<?php print $variables['banner_class']; ?>">
+          <header class="col-xs-12 titlearea banner">
            <div role="banner">
             <h1 class="page-title"><i class="<?php print $variables['icon_class']; ?>"></i><span><?php
             	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
