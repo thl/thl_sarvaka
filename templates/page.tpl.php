@@ -58,7 +58,7 @@
             	}
               ?></span></h1>
               <nav class="breadwrap" role="navigation">
-                <?php print shanti_sarvaka_get_breadcrumbs($variables); ?>
+                <?php print thl_sarvaka_breadcrumb($variables); ?>
               </nav>
               <div class="banner-content">
                 <?php print render($page['banner']); ?>
