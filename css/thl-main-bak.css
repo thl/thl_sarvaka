@@ -1,0 +1,107 @@
+/* Custom Theme Colors */
+.titlearea,
+.carousel-control,
+.breadcrumb .icon,
+.nav-justified>li.active a,
+.nav-justified>li.active a:hover,
+.nav-justified>li.active a:focus{ background:#a3bfb3;} /*#80978f*/
+.nav-justified>li.active:before{ color:#a3bfb3;}
+
+/* Override bootstrap default display block for brand image */
+.header-banner .navbar-brand>img {
+	display: inline-block;
+}
+
+/* Hide space below topbar banner */
+.header-banner {
+	z-index: 300;
+}
+
+/* Nowrap on header banner for smaller device */
+header.header-banner * {
+	white-space: nowrap;
+}
+
+/* Set banner background to thl mountains */
+header.header-banner div.navbar.navbar-default{
+	/*background: url('../images/thl-masthead-mountains-1400.jpg') no-repeat 0 0 #FFF;*/
+	border-radius: 0px;
+}
+
+/* Reduce height of banner area and tabs */
+.main-content header.has-tabs, .main-content header.has-tabs > div {
+	height: 8.5rem;
+}
+
+.main-content header ul.tabs.primary {
+	bottom: 0;
+}
+
+.main-content header ul.tabs.secondary {
+	bottom: .8rem;
+}
+
+.navbar.navbar-default {
+	background-color: #eee;
+}
+
+/* Align thl logo and banner/slogan text*/
+.navbar-default h1 {
+	padding-top: 3px;
+	margin-bottom: -3px;
+}
+
+.navbar-default h1 a.navbar-brand {
+	color: white;
+	padding-top: 4px;
+}
+
+.navbar-default h1 a.navbar-brand span {
+	display:inline-block;
+	top: 0px;
+}
+
+.navbar-default h1 a.navbar-brand span.site-title {
+	color: #444;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 120%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.navbar-default h1 a.navbar-brand span.site-slogan {
+	color: #555;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 90%;
+	font-style: italic;
+}
+
+.navbar-default h1 a.navbar-brand:hover {
+	color: #FFF;
+}
+
+/* Explore Collections Style Updates */
+
+section.collections {
+	padding-bottom: 16px;
+}
+
+/* Content Area */
+/*.page-places .main-content > .row > .content-section, .page-subjects .main-content > .row > .content-section {
+	padding: 0px;
+}
+.page-places .main-content .content .content-section {
+	padding: 12px;
+}
+*/
+
+/* Pager Styles */
+.pager input.form-text {
+ max-width: 50px;
+}
+.pager * {
+ display: inline;
+}
+.related-photos {
+max-width: 80px;
+}

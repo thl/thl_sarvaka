@@ -2,6 +2,9 @@ name = THL Sarvaka
 description = A responsive Drupal 7 theme for THL based on the Shanti Sarvaka Theme.
 core = 7.x
 base theme = shanti_sarvaka
+version = 7.x-1.0
+
+dependencies[] = jquery_update ; requires jquery v 1.10+
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
@@ -23,5 +26,26 @@ regions[admin_footer]   = Admin Footer
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] =  css/shanti-carousel-kmaps.css
+stylesheets[all][] =  css/shanti-main-kmaps.css
+; stylesheets[all][] =  css/shanti-search-kmaps.css 
 stylesheets[all][] = css/thl-main.css
 stylesheets[all][] = fonts/thlicon/thlicon-style.css
+
+;;;;;;;;;;;;;;;;;;;;;;
+;;; Scripts
+;;;;;;;;;;;;;;;;;;;;;;
+scripts[] = js/shanti-main-kmaps.js
+; scripts[] = js/shanti-search-kmaps.js
+scripts[] = js/thl-main.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Theme Settings   
+;;;;;;;;;;;;;;;;;;;;;
+;
+; These theme settings can be changed in the admin interface as well.
+; Furthermore, base color is primarily determined in CSS
+;
+;settings[shanti_sarvaka_base_color] = '#dc3c47' 
+;settings[shanti_sarvaka_icon_class] = 'subjects'
