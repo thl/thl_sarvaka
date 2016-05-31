@@ -1,15 +1,20 @@
 <?php
 
-
 /**
- * PREPROCESS FUNCTIONS
+ * @file
+ * template.php
  */
- 
+
+ /**
+  *   This is the template.php file for a child sub-theme of the Shanti Sarvaka theme.
+  *   Use it to implement custom functions or override existing functions in the theme.
+  */
+
 /**
  * Implements HOOK_breadcrumb().
  * Customizes output of breadcrumbs
  */
-function thl_sarvaka_breadcrumb($variables) {
+function sarvaka_kmaps_breadcrumb($variables) {
   global $base_url;
   $app = explode("/", current_path());
   $app = $app[0];
@@ -27,24 +32,4 @@ function thl_sarvaka_breadcrumb($variables) {
   }
   $output .= '</ol>';
   return $output;
-}
- 
-/*
- * Implements hook_preprocess
- * Add theme_path to all templates
- */
-function thl_sarvaka_preprocess(&$variables) {
-  global $base_url, $base_path;
-  $base = $base_url . $base_path . drupal_get_path('theme', 'thl_sarvaka') . '/';
-  $variables['base_color'] = theme_get_setting('shanti_sarvaka_base_color');
-  $variables['icon_class'] = theme_get_setting('shanti_sarvaka_icon_class');
-  $variables['breadcrumb'] = menu_get_active_breadcrumb();
-  $variables['breadcrumb'][] = ($variables['is_front'])? 'Home' : drupal_get_title();
-  $variables['theme_path'] = $base; 
-}
-
-function thl_sarvaka_preprocess_html(&$vars) {
-	//<link href='http://fonts.googleapis.com/css?family=PT+Sans:700,400italic' rel='stylesheet' type='text/css'>
-	//<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	drupal_add_css('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic', array('type' => 'external'));
 }
