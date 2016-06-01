@@ -5,7 +5,7 @@
  */
 function thl_sarvaka_form_system_theme_settings_alter(&$form, $form_state) {
   global $base_path;
-   unset($form['shanti_sarvaka_shanti_site']);
+   //unset($form['shanti_sarvaka_shanti_site']);
 	 
   $form['shanti_sarvaka_icon_class'] = array(
     '#type'          => 'textfield',

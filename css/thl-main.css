@@ -1,12 +1,41 @@
-.navbar-header .navbar-brand img { display: inline-block; }
 
+/* General Containers */
 .main-wrapper .container {
     width: 100%;
+}
+
+
+/*** Banner ***/
+
+.titlearea, .carousel-control, .breadcrumb .icon, .nav-tabs.nav-justified>li.active>a, .nav-tabs.nav-justified>li.active>a:focus, .nav-tabs.nav-justified>li.active>a:hover {
+    background-color: #74c9e8 !important;
 }
 
 .main-content .banner {
     padding-left: 12px;
 }
+
+.page-title {
+    padding-top: 12px;
+    overflow: visible;
+}
+
+.page-title .page-title-text div {
+    display: inline;
+}
+
+.page-title .icon2 {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.banner nav.breadwrap {
+    margin-top: 0.7rem;    
+}
+
+
+/** Images **/
+.navbar-header .navbar-brand img { display: inline-block; }
 
 .icon2 {
     padding-right: 8px;
