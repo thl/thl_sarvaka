@@ -4,6 +4,17 @@
     width: 100%;
 }
 
+/** Header **/
+    
+.navbar-header .navbar-brand img { 
+    display: inline-block; 
+    margin-top: 0px;
+}
+
+.navbar-header span.site-title {
+    display: inline-block;
+    padding-top: 10px;
+}
 
 /*** Banner ***/
 
@@ -35,7 +46,6 @@
 
 
 /** Images **/
-.navbar-header .navbar-brand img { display: inline-block; }
 
 .icon2 {
     padding-right: 8px;
